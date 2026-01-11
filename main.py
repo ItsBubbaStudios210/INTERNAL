@@ -1,13 +1,22 @@
 import time, os, sys, random, string
 #Varibiles
 Name, Version, Creator = "INTERNAL", "BETA", "ItsBubbaStudiosOffical"
+DEBUG = True
 command_input = "INTERNAL > "
+Max_Verstappen = """
+Max Verstappen - F1 Driver
+
+    _________
+   | ORACLE  |
+ __|_RedBull_|
+"""
 
 # Idea's List
 ideas_list = {
     "IDEA TEMPLATE ('Idea' made by 'Creator' its was on 'Platform')",
     "INTERNAL frist brought from ItsBubbaStudiosOffical",
-    "Word Maker by My sibiling"
+    "Word Maker by My sibiling",
+    "Random Max Verstappen refernce by MasterOwel6713 on Youtube"
 }
 # Word Choice list
 wordchoice = [
@@ -16,7 +25,13 @@ wordchoice = [
 
 # Print All Of The Idea's
 def INTERNAL_CREDITS():
-    global ideas_list
+    global ideas_list, Max_Verstappen
+    randomnumber = random.randint(0, 100)
+    if randomnumber == 45:
+        print(Max_Verstappen)
+        print()
+    if DEBUG:
+        print(randomnumber)
     for item in ideas_list:
         print(item)
 
